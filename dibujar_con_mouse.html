@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dibujando con mouse</title>
+        <h1><center><u>Expresa tu imaginación</u></center></h1>
+        <style>
+            #area_de_dibujo
+            {
+            margin: 0 auto;
+            display: block; /* permite al elemento ser afectado por la propiedad margin*/
+            border: 2px solid #d9d9d9;
+            background-color: white;
+            }
+            body
+            {
+                background-color: black;
+                color: white;
+                font-family: Helvetica;
+            }
+        </style>
+    </head>
+    <body>
+        <p><center>Mueve el mouse para dibujar</center></p>
+        <canvas width="600" height="450" id="area_de_dibujo"></canvas>
+        <p><center>
+        Escoge un color: 
+        <input type="color" value="#000000" id="boton_color"/><br><br>
+        <input type="text" id="ancho_linea"/>
+        <input type="button" value="Ancho de linea" id="boton_ancho"/> 
+        </center></p>
+        <p><center><input type="button" value="Borrar" id="boton_borrar"/></center></p>
+        <script src="dibujar.js"></script>
+    </body>
+</html>
